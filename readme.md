@@ -41,7 +41,7 @@ module.exports = {
                 "style-loader", 
                 "css-loader", 
                 {
-                 loader: require.resolve('./css-util-webpack-loader/dist/unitConversionLoader'),
+                 loader: require.resolve('css-util-webpack-loader/dist/unitConversionLoader'),
                  options: {
                     originUnit: 'px',
                     replaceUnit: 'rem',
@@ -169,7 +169,7 @@ module.exports = {
                 "css-loader", 
                 "sass-loader", 
                 {
-                  loader: require.resolve('./css-util-webpack-loader/dist/globalSassLoader'),
+                  loader: require.resolve('css-util-webpack-loader/dist/globalSassLoader'),
                   options: {
                     filePaths: [
                         require.resolve('../src/var.scss'),
