@@ -1,0 +1,28 @@
+{
+  "name": "css-util-webpack-plugin",
+  "version": "0.0.1",
+  "description": "css util",
+  "main": "index.js",
+  "author": "mRyan",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {
+    "@types/loader-utils": "^1.1.3",
+    "@types/webpack": "^4.4.24",
+    "loader-utils": "^1.2.3",
+    "typescript": "^3.3.3333",
+    "webpack": "^4.29.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:m-Ryan/css-util-webpack-loader.git"
+  },
+  "keywords": [
+    "css",
+    "sass",
+    "global sass",
+    "unit conversion"
+  ]
+}
