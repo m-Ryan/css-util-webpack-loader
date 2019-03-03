@@ -50,6 +50,22 @@ module.exports = {
                  }
                 }
             ]
+        },{
+            test: /\.scss$/,
+            use: [
+                "style-loader", 
+                "css-loader", 
+                {
+                 loader: require.resolve('css-util-webpack-loader/dist/unitConversionLoader'),
+                 options: {
+                    originUnit: 'px',
+                    replaceUnit: 'rem',
+                    precision: 5,
+                    times: 0.01,
+                 }
+                },
+                "sass-loader", 
+            ]
         }]
     }
 };
